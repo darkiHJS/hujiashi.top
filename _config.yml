@@ -7,14 +7,14 @@ title: Darki'网络日志
 subtitle: ''
 description: ''
 keywords:
-author: John Doe
+author: Darki
 language: zh-Hans
 timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://darkihjs.github.io/note
-root: /note/
+url: https://hujiashi.top/
+root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -95,4 +95,6 @@ theme: next
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: ''
+  type: git
+  repository: git@github.com:darkiHJS/darkiHjs.github.io.git
+  branch: master
