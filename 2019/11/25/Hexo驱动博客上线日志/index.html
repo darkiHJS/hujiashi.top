@@ -79,15 +79,18 @@
 
 
 
-<meta name="description" content="咕噜噜噜">
+<meta name="description" content="苦大仇深的Hexo 坑1 无法修改pages的指向不得不说，目前为止纠结最大一个坑，也是网上错误最多的一个坑。github的首页已经不能修改pages指向的branch了，强制使用master作为目录。我在反复尝试各种方法后，在没找到如何修改Travis CI上传的目录（默认是gh-pages分支),改用hexo depley自行上传，太麻烦了，失去了我用hexo的意义。 下面是正确的流程 1新建">
 <meta property="og:type" content="article">
-<meta property="og:title" content="test">
-<meta property="og:url" content="https:&#x2F;&#x2F;hujiashi.top&#x2F;2019&#x2F;11&#x2F;25&#x2F;test&#x2F;index.html">
+<meta property="og:title" content="Hexo驱动博客上线日志">
+<meta property="og:url" content="https:&#x2F;&#x2F;hujiashi.top&#x2F;2019&#x2F;11&#x2F;25&#x2F;Hexo%E9%A9%B1%E5%8A%A8%E5%8D%9A%E5%AE%A2%E4%B8%8A%E7%BA%BF%E6%97%A5%E5%BF%97&#x2F;index.html">
 <meta property="og:site_name" content="Darki&#39;网络日志">
-<meta property="og:description" content="咕噜噜噜">
+<meta property="og:description" content="苦大仇深的Hexo 坑1 无法修改pages的指向不得不说，目前为止纠结最大一个坑，也是网上错误最多的一个坑。github的首页已经不能修改pages指向的branch了，强制使用master作为目录。我在反复尝试各种方法后，在没找到如何修改Travis CI上传的目录（默认是gh-pages分支),改用hexo depley自行上传，太麻烦了，失去了我用hexo的意义。 下面是正确的流程 1新建">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-11-25T06:08:27.981Z">
+<meta property="og:image" content="http:&#x2F;&#x2F;ww1.sinaimg.cn&#x2F;large&#x2F;893e6980gy1g9ab2l820zj20pw0e8wih.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;ww1.sinaimg.cn&#x2F;large&#x2F;893e6980gy1g9abaj27p3j207g05hjra.jpg">
+<meta property="og:updated_time" content="2019-11-25T07:31:28.667Z">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;ww1.sinaimg.cn&#x2F;large&#x2F;893e6980gy1g9ab2l820zj20pw0e8wih.jpg">
 
 
 
@@ -117,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="https://hujiashi.top/2019/11/25/test/"/>
+  <link rel="canonical" href="https://hujiashi.top/2019/11/25/Hexo驱动博客上线日志/"/>
 
 
 
 
 
-  <title>test | Darki'网络日志</title>
+  <title>Hexo驱动博客上线日志 | Darki'网络日志</title>
   
 
 
@@ -230,7 +233,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://hujiashi.top/2019/11/25/test/">
+    <link itemprop="mainEntityOfPage" href="https://hujiashi.top/2019/11/25/Hexo%E9%A9%B1%E5%8A%A8%E5%8D%9A%E5%AE%A2%E4%B8%8A%E7%BA%BF%E6%97%A5%E5%BF%97/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Darki">
@@ -247,7 +250,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">test</h1>
+          <h1 class="post-title" itemprop="name headline">Hexo驱动博客上线日志</h1>
         
 
         <div class="post-meta">
@@ -259,7 +262,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-11-25T14:07:00+00:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-11-25T14:27:40+00:00">
                 2019-11-25
               </time>
             
@@ -297,7 +300,18 @@
       
 
       
-        <p>咕噜噜噜</p>
+        <p><em>苦大仇深的Hexo</em></p>
+<h3 id="坑1-无法修改pages的指向"><a href="#坑1-无法修改pages的指向" class="headerlink" title="坑1 无法修改pages的指向"></a>坑1 无法修改pages的指向</h3><p>不得不说，目前为止纠结最大一个坑，也是网上错误最多的一个坑。<br>github的首页已经不能修改pages指向的branch了，强制使用master作为目录。我在反复尝试各种方法后，在没找到如何修改Travis CI上传的目录（默认是gh-pages分支),改用hexo depley自行上传，太麻烦了，失去了我用hexo的意义。</p>
+<p>下面是正确的流程</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">新建一个 repository。如果你希望你的站点能通过 &lt;你的 GitHub 用户名&gt;.github.io 域名访问，你的 repository 应该直接命名为 &lt;你的 GitHub 用户名&gt;.github.io。</span><br></pre></td></tr></table></figure>
+<p>这边官方文档让你创建 <code>&lt;你的 GitHub 用户名&gt;.github.io</code>命名的repository，现在第一步不要这么做，不然你会发现<br><img src="http://ww1.sinaimg.cn/large/893e6980gy1g9ab2l820zj20pw0e8wih.jpg" alt="图片.png"><br>这玩意它不能改！！然后github pages又不能解析你master分支的代码，那不就萎了吗。<br>所以第一步不能用这个取名法，那就用自己申请的域名做项目名称，比如我就<code>hujiashi.top</code></p>
+<p>然后pages的branch就可以可以改了。但是访问路径是 <code>&lt;username&gt;.github.io/hujiashi.top/</code><br>下面这么做，在你的hexo目录下的<code>source</code>中新建<code>CNAME</code>文件内容是</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">你的域名</span><br></pre></td></tr></table></figure>
+<p><img src="http://ww1.sinaimg.cn/large/893e6980gy1g9abaj27p3j207g05hjra.jpg" alt="eee.png"></p>
+<p>接下来复制你的<code>&lt;username&gt;.github.io/</code>或者在命令行中<code>ping &lt;username&gt;.github.io</code>拿到ip地址去你的域名网站解析，具体网上教程很多，用github域名时使用CNAME模式就行了</p>
+<p>接着如同文档所示的走就可以了。</p>
+<h3 id="坑2-Tracis-CI一直显示missing-GH-TOKEN"><a href="#坑2-Tracis-CI一直显示missing-GH-TOKEN" class="headerlink" title="坑2 Tracis CI一直显示missing GH_TOKEN"></a>坑2 Tracis CI一直显示missing GH_TOKEN</h3><p>解决方法：晾了它一天，自己就好了 （？？？）</p>
+<h3 id="坑3-通过git-clone方式安装的nxet主题不起作用"><a href="#坑3-通过git-clone方式安装的nxet主题不起作用" class="headerlink" title="坑3 通过git clone方式安装的nxet主题不起作用"></a>坑3 通过git clone方式安装的nxet主题不起作用</h3><p>解决方法：按照git提示命令把他纳入自己的库中</p>
 
       
     </div>
@@ -382,8 +396,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -425,6 +448,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#坑1-无法修改pages的指向"><span class="nav-number">1.</span> <span class="nav-text">坑1 无法修改pages的指向</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#坑2-Tracis-CI一直显示missing-GH-TOKEN"><span class="nav-number">2.</span> <span class="nav-text">坑2 Tracis CI一直显示missing GH_TOKEN</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#坑3-通过git-clone方式安装的nxet主题不起作用"><span class="nav-number">3.</span> <span class="nav-text">坑3 通过git clone方式安装的nxet主题不起作用</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
